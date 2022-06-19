@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+		/>
+
+		<title>Fintech</title>
+	</head>
+	<body>
+		<header class="cabecalho">
+			<nav class="navbar navbar-expand-lg navbar-dark">
+				<div class="container-fluid">
+					<img src="../assets/logo.png" id="logo" alt="Logo da empresa" />
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="index.html">
+									<i class="bi bi-house-door"></i>Home
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">
+									<i class="bi bi-person"></i> Meu Perfil
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="formulario.html">
+									<i class="bi bi-cash-stack"></i> Recebimentos</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">
+									<i id="icone-despesa" class="bi bi-cash-coin"></i> Despesas
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">
+									<i class="bi bi-sliders2"></i> Configurações</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<div class="container">
+				<h1 class="titulo">Meu Perfil</h1>
+				<div class="row">
+					<div class="col">
+						<section class="perfil">
+							<h2 class="subtitulo">Dados Pessoais:</h2>
+							<article class="avatar"></article>
+							<article class="formulario">
+								<form class="row g-3" action="#" method="POST">
+									<div class="col-sm-6">
+										<label for="nome">Nome:</label>
+										<input
+											type="text"
+											class="form-control"
+											value="Leonardo"
+											disabled
+										/>
+									</div>
+									<div class="col-sm-6">
+										<label for="sexo">Sexo:</label>
+										<input
+											type="text"
+											class="form-control"
+											value="Masculino"
+											disabled
+										/>
+									</div>
+
+									<div class="col-sm">
+										<label for="Email">E-mail:</label>
+										<input
+											type="text"
+											class="form-control"
+											value="leonardo.silva@gmail.com"
+											disabled
+										/>
+									</div>
+								</form>
+							</article>
+						</section>
+					</div>
+
+					<div class="col">
+						<section class="cartoes">
+							<h2 class="subtitulo">Seus cartões cadastrados:</h2>
+							<article class="card">
+								<div class="row align-items-center justify-content-center">
+									<div class="col-2">
+										<img src="../assets/nubank.png" />
+									</div>
+
+									<div class="col-4 fs-5">
+										<p>**** **** **** **45</p>
+									</div>
+									<div class="col-4 fw-bold text-center">
+										<p>Crédito / Débito</p>
+									</div>
+								</div>
+								<hr />
+								<div class="row align-items-center justify-content-center">
+									<div class="col-2">
+										<img src="../assets/picpay.png" />
+									</div>
+
+									<div class="col-4 fs-5">
+										<p>**** **** **** **68</p>
+									</div>
+									<div class="col-4 fw-bold text-center">
+										<p>Crédito</p>
+									</div>
+								</div>
+							</article>
+						</section>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer><p>&copy; Fintech - Todos os Direitos Reservados.</p></footer>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

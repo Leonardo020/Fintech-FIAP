@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+		/>
+
+		<title>Fintech</title>
+	</head>
+	<body>
+		<header class="cabecalho">
+			<nav class="navbar navbar-expand-lg navbar-dark">
+				<div class="container-fluid">
+					<img src="../assets/logo.png" id="logo" alt="Logo da empresa" />
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="#">
+									<i class="bi bi-house-door"></i>Home
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="meu_perfil.html">
+									<i class="bi bi-person"></i> Meu Perfil
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="formulario.html">
+									<i class="bi bi-cash-stack"></i> Recebimentos</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">
+									<i id="icone-despesa" class="bi bi-cash-coin"></i> Despesas
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">
+									<i class="bi bi-sliders2"></i> Configurações</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<div class="container">
+				<h1 class="titulo">Bem-vindo, Leonardo!</h1>
+				<div class="row align-items-center">
+					<div class="col">
+						<section class="resumo">
+							<article class="rendimentos">
+								<div class="subtitulo">
+									<i class="bi bi-currency-dollar text-success"></i>
+									<h2>Seus últimos rendimentos:</h1>
+								</div>
+								<table class="table">
+									<thead>
+										<tr>
+											<th scope="col">Fonte</th>
+											<th scope="col">Descrição</th>
+											<th scope="col">Valor</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="w-25"><img src="../assets/nubank.png" alt="Logo da Nubank"></td>
+											<td>Salário</td>
+											<td>R$ 720,00</td>
+										</tr>
+										<tr>
+											<td class="w-25"><img src="../assets/picpay.png" alt="Logo do Picpay"></td>
+											<td>Pix de Cecília</td>
+											<td>R$ 10,00</td>
+										</tr>
+										<tr>
+											<td class="text-main" rowspan="3">
+												<a class="success" href="#"
+													><i class="bi bi-plus"></i> Ver mais...</a
+												>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</article>
+							<article class="despesas">
+								<div class="subtitulo">
+									<i class="bi bi-currency-dollar text-danger"></i>
+									<h2>Suas últimas despesas:</h1>
+								</div>
+								<table class="table">
+									<thead>
+										<tr>
+											<th scope="col">Fonte</th>
+											<th scope="col">Descrição</th>
+											<th scope="col">Valor</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="w-25"><img src="../assets/nubank.png" alt="Logo da Nubank"></td>
+											<td>Fatura Cartão</td>
+											<td>R$ 500,00</td>
+										</tr>
+										<tr>
+											<td class="w-25"><img src="../assets/ifood.png" alt="Logo do IFood"></td>
+											<td>Big Mec</td>
+											<td>R$ 22,80</td>
+										</tr>
+										<tr>
+											<td class="text-main" rowspan="3">
+												<a class="danger" href="#"
+													><i class="bi bi-plus"></i> Ver mais...</a
+												>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</article>
+						</section>
+					</div>
+					<div class="col">
+						<section class="dashboard">
+              				<h2 class="subtitulo mb-4"> Dashboard das despesas: </h2>
+							<div class="chart"></div>
+							<ul class="key">
+								<li>
+									<strong class="percent red">20%</strong>
+									<span class="choice">Faturas</span>
+								</li>
+								<li>
+									<strong class="percent orange">30%</strong>
+									<span class="choice">Alimentação</span>
+								</li>
+								<li>
+									<strong class="percent blue">10%</strong>
+									<span class="choice">Investimento</span>
+								</li>
+								<li>
+									<strong class="percent yellow">10%</strong>
+									<span class="choice">Educação</span>
+								</li>
+								<li>
+									<strong class="percent purple">15%</strong>
+									<span class="choice">Entretenimento</span>
+								</li>
+								<li>
+									<strong class="percent green">15%</strong>
+									<span class="choice">Outros</span>
+								</li>
+							</ul>
+						</section>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer><p>&copy; Fintech - Todos os Direitos Reservados.</p></footer>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
