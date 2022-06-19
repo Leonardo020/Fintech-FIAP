@@ -1,0 +1,60 @@
+:root {
+  --margin-default: 10px;
+}
+
+h1 {
+  font-size: 170% !important;
+}
+
+#logo {
+  width: 10rem;
+}
+
+.cabecalho {
+  color: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    #6a00f1 0%,
+    rgba(40, 12, 74, 0.634894) 94.79%,
+    rgba(101, 26, 197, 0.56) 97.92%
+  );
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cabecalho a {
+  color: rgb(255, 255, 255) !important;
+}
+
+.cabecalho a:hover {
+  color: rgb(194, 192, 192) !important;
+}
+
+.bi {
+  margin-right: var(--margin-default);
+  font-size: 1.4rem;
+}
+
+.home {
+  margin-top: var(--margin-default);
+}
+
+.rendimentos .bi {
+  color: rgba(87, 201, 112, 1);
+  font-size: 1.7rem;
+  margin-bottom: var(--margin-default);
+}
+
+.titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table {
+  border: 1px solid rgba(217, 199, 199, 1);
+}
+
+th {
+  border-bottom-color: rgba(217, 199, 199, 1) !important;
+}
