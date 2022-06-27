@@ -10,6 +10,7 @@
   --orange: rgb(250, 164, 58);
   --white: rgb(255, 255, 255);
   --main: rgba(56, 7, 121);
+  --gradient-main: linear-gradient(180deg, #410294 0%, rgb(93, 1, 206) 94.79%);
 }
 
 .text-main {
@@ -62,28 +63,30 @@ img {
 }
 
 /*Cabeçalho*/
-#logo {
-  width: 8rem;
+.avatar-logo {
+  padding: var(--margin-default);
+  width: 5.5rem;
+  flex-wrap: nowrap !important;
+  align-items: center;
 }
 
-.cabecalho {
+header {
   color: rgb(255, 255, 255);
-  background: linear-gradient(
-    180deg,
-    #410294 0%,
-    rgba(93, 1, 206, 0.635) 94.79%,
-    rgba(234, 231, 238, 0.56) 97.92%
-  );
+  background: var(--gradient-main);
   align-items: center;
   justify-content: space-between;
 }
 
-.cabecalho a {
+header a {
   color: var(--white) !important;
 }
 
-.cabecalho a:hover {
+header a:hover {
   color: rgb(194, 192, 192) !important;
+}
+
+.navbar-collapse {
+  flex-grow: 0 !important;
 }
 
 .bi {
@@ -127,7 +130,7 @@ th {
   margin-bottom: 10px;
 }
 
-.text-main a {
+.anchor-default {
   color: var(--main);
   text-decoration: none;
 }
@@ -191,15 +194,15 @@ th {
 }
 
 /*Meu Perfil*/
-
-.avatar {
+.profile-avatar {
   border: 1px solid var(--main);
   border-radius: 50%;
-  width: 12rem;
-  height: 11rem;
-  background-image: url("../assets/logo.png");
+  margin: var(--margin-default);
+  width: 14rem;
+  height: 14rem;
+  background-image: url("../assets/perfil.jpeg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
 }
 
@@ -220,7 +223,7 @@ footer {
   display: flex !important;
   justify-content: center;
   position: fixed;
-  background-color: var(--main);
+  background: var(--gradient-main);
   color: var(--white);
   bottom: 0;
   left: 0;
