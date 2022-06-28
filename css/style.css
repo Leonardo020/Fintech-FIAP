@@ -117,6 +117,22 @@ img {
   color: var(--main);
 }
 
+.login-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-facebook {
+  background: #5686e1 !important;
+}
+
+.btn-google {
+  background: white;
+  color: var(--red) !important;
+  border-color: var(--red) !important;
+}
+
 /*Cabeçalho*/
 .avatar-logo {
   padding: var(--margin-default);
@@ -263,7 +279,7 @@ th {
   margin: calc(var(--margin-default) * 2);
 }
 
-.card {
+.cartoes .card {
   padding: calc(var(--margin-default) * 2);
 }
 
